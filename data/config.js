@@ -7,5 +7,5 @@
  *         비워두면 질문이 클립보드에 복사됩니다.
  * ============================================================= */
 window.SITE_CONFIG = {
-  repo: ""   // 예: "ethan/equity-research"
+  repo: "heekoo222/equity-research"   // GitHub 저장소
 };
