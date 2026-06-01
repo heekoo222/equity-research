@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나의 종목 분석 노트</title>
+  <meta name="description" content="개인투자자 종목 분석 노트 — 증권사 리포트 형식" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <h1>📈 나의 종목 분석 노트 <span class="tag">Equity Research</span></h1>
+    <a class="navbtn" href="#qna">💬 Q&amp;A</a>
+    <div class="search">
+      <input id="q" type="text" placeholder="종목·티커·섹터 검색" autocomplete="off" />
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-head"><span>관심·보유 종목</span><span id="count"></span></div>
+      <div id="list"></div>
+    </aside>
+    <main class="main" id="main"></main>
+  </div>
+
+  <!-- 데이터 (script 방식 → 로컬 파일에서도 동작, fetch 불필요) -->
+  <script src="data/stocks.js"></script>
+  <script src="data/config.js"></script>
+  <script src="data/qa.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
